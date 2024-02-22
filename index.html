@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App Demo</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/movie-app-style.css" />
 
-    <!-- JAVASCRIPT -->
-    <script src="js/index.js" defer></script>
-</head>
-<body>
-
+    <!-- link JS file and defer its load i.e. loads after html contents gets rendered -->
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
     <div class="container">
-        <div class="search_box">
-            <a href="#"><h1>Movie Database API Clone</h1></a>
-            <form id="search_form">
-                <input type="text" id="search_input" placeholder="Search For a Movie.">
-                <button type="submit" class="search_button">Search</button>
-            </form>
-        </div>
+      <div class="search-box">
+        <a href="#">
+          <h1>Movie Database API Demo</h1>
+        </a>
+        <form id="search-form">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search your movie"
+          />
+          <button type="submit" class="search-btn">Search</button>
+        </form>
+      </div>
+      <!-- Reached breakpoint - style this -->
 
-        <!-- dynamic content -->
-        <div class="result">
-
-        </div>
-
+      <!-- innerHTML of the following block will be dynamically geenrated through JS  -->
+      <div id="result"></div>
     </div>
-</body>
+  </body>
 </html>
